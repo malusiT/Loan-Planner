@@ -4,31 +4,46 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>SB Cash Loans Calculator</title>
+        <title>Cash Loan Calculator</title>
     </head>
     <header id="header-section">
-        <image alt="empty image" width="100" height="100" id="logo-image" src="StockCake-Dewy Mango Portrait_1720701236.jpg"></image>
-        <h1><a>SB Cash Loans Calculator</a></h1>
+        <image alt="empty image" width="100" height="100" id="logo-image" src="icons8-dollar-sign-100.png"></image>
+        <h1><a> Cash Loan Calculator</a></h1>
     </header>
     <body>
-        <div id="brief-description">Calculator used for loan interest calculations.</div>
+        <div id="brief-description">Loan interest calculations</div>
 
-        <div id="calculations">
-            <select>
-                <option>1 Month</option>
-                <option>2 Months</option>
+        <section id="calculations">
+            <!--Input Loan Amount-->
+            <label>Input Loan Amount:</label>
+            <input type="number"  placeholder="eg. R1000.00" id="loan-amount">
+            
+            <!-- Interest rate amount -->
+            <label>Interest Rate (%):</label>
+            <input type="number"  id="interest-rate" placeholder="eg. 30 -> 30%" value="30">
+
+            <label>Admin fee:</label>
+            <input type="number"  id="admin-fee" placeholder="eg. R30.00" value="30">
+
+            <!--Input Loan Period eg. 1 Month or 2 Months-->
+            <label for="loan-period" id="loan-period">Loan Period:</label>
+            <select id="months">
+                <option id="1st-month" value="1">1 Month</option>
+                <option id="2nd-month" value="2">2 Months</option>
             </select>
             <br>
-            <label>Input Loan Amount: </label>
-            <input type="number" placeholder="eg. R1000.00">
-            <br>
-            <input type="button" value="Calculate" id="calculate-button">
-        </div>
-        
 
-        <div id="display">
-            <label>Full Loan Amount: </label>
-            <output id="output-amount"></output>
-        </div>
+            <!--Calculate the loan Amount for specified period-->
+            <button id="calculate-button">Calculate</button>
+
+    </section>
+
+        <section id="display">
+            <label>Full Loan Amount: </label><br>
+            <output id="output-amount">R2500</output>
+            <br>
+            <button id="reset">Reset</button>
+        </section>
+        <script src="./script.js"></script>
     </body>
 </html>
