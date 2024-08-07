@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "loan_calculator",
+    "version": "1.0",
+    "description": "A loan calculator extension for easy access for a calculator",
+    "permissions": [],
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "icons8-dollar-sign-100.png"
+    }
+}
