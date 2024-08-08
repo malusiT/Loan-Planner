@@ -1,4 +1,8 @@
-![Loan Calculator Logo](icons8-dollar-sign-100.png) # Loan Calculator Extension
+# Loan Calculator Extension
+
+<p align="center">
+  <img src="icons8-dollar-sign-100.png" alt="Loan Calculator Logo" />
+</p>
 
 A simple and intuitive loan calculator extension that helps users quickly calculate their loan payments, interest, and total repayment amounts. This extension supports various browsers and provides an easy-to-use interface for financial calculations.
 
@@ -12,6 +16,14 @@ A simple and intuitive loan calculator extension that helps users quickly calcul
 
 ## Installation
 
+### Clone the Repository
+
+To get started with the Loan Calculator Extension, you can clone the repository:
+
+```bash
+git clone https://github.com/malusiT/loan_calculator.git
+cd loan_calculator
+```
 ### Chrome
 
 1. Download the source code from the [GitHub repository](https://github.com/malusiT/loan_calculator).
