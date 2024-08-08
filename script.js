@@ -28,16 +28,21 @@ calculateBtn.addEventListener("click", () =>{
     if (isNaN(loanAmount) || isNaN(interestRate) || isNaN(adminFee) || isNaN(loanPeriod)) {
         outputText.textContent = "Please enter valid numbers in all fields.";
     } else {
-        outputText.textContent = `R${loanAmount} -> R${calculate(loanAmount)}`;
+        if (loanPeriod === 1){
+            outputText.textContent = `Loan Repayment for R${loanAmount} = R${calculate(loanAmount)}`;
+        }else if(loanPeriod === 2){
+            outputText.textContent = `Loan Repayment for R${loanAmount} = R${calculate(loanAmount)}`;
+            outputText.textContent += `\n R${calculate(loanAmount)/2} per month`
+        }
     }
 })
  
 resetButton.addEventListener("click", () =>{
     
-    document.querySelector("#loan-amount").value = ""
+    document.querySelector("#loan-amount").value = "";
     document.querySelector("#interest-rate").value = "30";
-    document.querySelector("#admin-fee").value ="30"
+    document.querySelector("#admin-fee").value ="30";
     document.querySelector("#months").value = "1"; // Reset to the first option in the select element
-    outputText.textContent = "0"
+    outputText.textContent = "R0";
 
 })

@@ -12,8 +12,8 @@
 }
 header{
     /* background-image: linear-gradient(#056b1f,#fff,#333,#056b1f); */
-    width: 100vw;
-    height: 7.5rem;
+    max-width: 500px;
+    max-height: 500px;
     padding: 10px 20px;
     display: inline-flex;
     justify-content: space-between;
@@ -29,8 +29,11 @@ header h1{
 body{
     text-align: center;
     line-height: 1.5rem;
-    width: 400px;
-    height: 500px;
+    max-width: 400px;
+    max-height: 700px;
+    border-radius:5px;
+    border: 5px solid var(--navy_grey--) ;
+    padding-bottom: 15px;
 }
 body > div{
     text-transform: capitalize;
