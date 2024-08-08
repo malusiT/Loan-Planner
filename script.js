@@ -27,13 +27,14 @@ calculateBtn.addEventListener("click", () =>{
 
     if (isNaN(loanAmount) || isNaN(interestRate) || isNaN(adminFee) || isNaN(loanPeriod)) {
         outputText.textContent = "Please enter valid numbers in all fields.";
-    } else {
+    }else {
         if (loanPeriod === 1){
             outputText.textContent = `Loan Repayment for R${loanAmount} = R${calculate(loanAmount)}`;
         }else if(loanPeriod === 2){
             outputText.textContent = `Loan Repayment for R${loanAmount} = R${calculate(loanAmount)}`;
             outputText.textContent += `\n R${calculate(loanAmount)/2} per month`
         }
+        
     }
 })
  
