@@ -1,4 +1,4 @@
-# Loan Calculator Extension
+![Loan Calculator Logo](icons8-dollar-sign-100.png) # Loan Calculator Extension
 
 A simple and intuitive loan calculator extension that helps users quickly calculate their loan payments, interest, and total repayment amounts. This extension supports various browsers and provides an easy-to-use interface for financial calculations.
 
